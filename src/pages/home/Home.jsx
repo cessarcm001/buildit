@@ -1,11 +1,10 @@
-// import Featured from "../../components/featured/Featured";
-// import FeaturedProperties from "../../components/featuredProperties/FeaturedProperties";
+import Featured from "../../components/featured/Featured";
+import FeaturedMaquinaria from "../../components/featuredMaquinaria/FeaturedMaquinaria";
 // import Footer from "../../components/footer/Footer";
-// import Header from "../../components/header/Header";
 // import MailList from "../../components/mailList/MailList";
 import Header from "../../components/header/Header";
 import Navbar from "../../components/navbar/Navbar";
-// import PropertyList from "../../components/propertyList/PropertyList";
+import MaquinariaList from "../../components/maquinariaList/MaquinariaList";
 import "./home.css";
 
 const Home = () => {
@@ -13,6 +12,13 @@ const Home = () => {
     <div>
       <Navbar />
       <Header/>
+      <div className="homeContainer">
+        <Featured/>
+        <h1 className="homeTitle">Busca segun el tipo de maquinaria</h1>
+        <MaquinariaList/>
+        <h1 className="homeTitle">Renta todo para tu obra</h1>
+        <FeaturedMaquinaria/>
+      </div>
       {/* <Header/>
       <div className="homeContainer">
         <Featured/>

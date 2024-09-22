@@ -12,7 +12,7 @@ import Menu from '@mui/material/Menu';
 import MenuItem from '@mui/material/MenuItem';
 import { MAQUINARIA_TYPES } from "../../constants/enums";
 
-const Header = () => {
+const Header = (type) => {
     const [openDate, setOpenDate] = useState(false)
     const [date, setDate] = useState([
         {
@@ -60,7 +60,9 @@ const Header = () => {
                     <span> Renta Exavadoras!</span>
                 </div>
             </div>
-            <h1 className="h1headerTitle">Encuentra Maquinaria cerca de ti! </h1>
+            { type !== "list" &&
+                <>
+                <h1 className="h1headerTitle">Encuentra Maquinaria cerca de ti! </h1>
             <p className="headerDesc">
                 Se recompensado por tus rentas con promociones y descuentos futuros.
             </p>
@@ -117,7 +119,7 @@ const Header = () => {
                 </Menu>
                 
                 <button className="headerBtn">Search</button>
-            </div>
+            </div></>}
         </div>
     </div>
   )
