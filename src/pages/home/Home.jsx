@@ -1,7 +1,7 @@
 import Featured from "../../components/featured/Featured";
 import FeaturedMaquinaria from "../../components/featuredMaquinaria/FeaturedMaquinaria";
 // import Footer from "../../components/footer/Footer";
-// import MailList from "../../components/mailList/MailList";
+import MailList from "../../components/mailList/MailList";
 import Header from "../../components/header/Header";
 import Navbar from "../../components/navbar/Navbar";
 import MaquinariaList from "../../components/maquinariaList/MaquinariaList";
@@ -18,6 +18,7 @@ const Home = () => {
         <MaquinariaList/>
         <h1 className="homeTitle">Renta todo para tu obra</h1>
         <FeaturedMaquinaria/>
+        <MailList/>
       </div>
       {/* <Header/>
       <div className="homeContainer">
